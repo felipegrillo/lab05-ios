@@ -9,7 +9,21 @@
 #import <UIKit/UIKit.h>
 
 @interface Home : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *lblColor;
 
+@property (strong, nonatomic) IBOutlet UILabel *lblRojo;
+@property (strong, nonatomic) IBOutlet UILabel *lblVerde;
+@property (strong, nonatomic) IBOutlet UILabel *lblAzul;
+@property (strong, nonatomic) IBOutlet UILabel *lblBlink;
+@property (strong, nonatomic) IBOutlet UISlider *slideRojo;
+@property (strong, nonatomic) IBOutlet UISlider *slideVerde;
+@property (strong, nonatomic) IBOutlet UISlider *slideAzul;
+@property (strong, nonatomic) IBOutlet UISlider *slideBlink;
+
+- (IBAction)slideRojoChanged:(id)sender;
+- (IBAction)slideVerdeChangeg:(id)sender;
+- (IBAction)slideAzulChanged:(id)sender;
+- (IBAction)slideBlinkChanged:(id)sender;
 
 @end
 
